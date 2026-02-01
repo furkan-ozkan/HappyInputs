@@ -2,6 +2,18 @@
 
 A robust, event-driven Input Framework for Unity built on top of the **New Input System**. It decouples game logic from hardware inputs using a ScriptableObject-based architecture, making it highly scalable and easy to maintain.
 
+> [!IMPORTANT]
+> **Critical Compatibility Warning: Input System Bug**
+> 
+> A significant bug in **Input System v1.17.0** prevents `Input Action References` from being saved correctly when assigned to ScriptableObjects or Prefabs.
+>
+> **Recommended Solutions:**
+> * **Option A (Preferred):** Manually update to **v1.18.0** via the Package Manager. 
+>   * *Note:* If you encounter a `Signature Invalid` error after updating to 1.18.0, upgrade your editor to **Unity 6000.3.5f1** or higher to resolve it.
+> * **Option B (Rollback):** Revert to **v1.15.0**, which is stable and does not exhibit this saving issue.
+> 
+> Do not rely on the default version provided by the package manager; please verify and update manually.
+
 ## 🚀 Key Features
 
 * **Decoupled Architecture**: Logic is separated from hardware. Your scripts listen to events, not keys.
